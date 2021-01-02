@@ -2,14 +2,27 @@ import React from "react"
 import SearchBar from "./components/SearchBar"
 import DisplayInformation from "./components/DisplayInformation"
 import './App.css';
+//Handle fetch request from this component
+class App extends React.Component {
+     
+    onSubmitSearch =(search)=>{
+      console.log(search)
+        
 
-function App() {
-  return (
-    <div className="App">
-       <SearchBar/>
-       <DisplayInformation/>
-    </div>
-  );
+
+    }
+   
+  render(){
+
+
+    return (
+      <div className="App">
+         <SearchBar onSubmitSearch={this.onSubmitSearch}/>
+         <hr/>
+         <DisplayInformation/>
+      </div>
+    );
+  }
 }
 
 export default App;
