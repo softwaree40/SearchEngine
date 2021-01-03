@@ -6,7 +6,7 @@ const DisplayInformation = (props)=>{
    
     const imgImage = props.images.map((image)=> {
 
-       return <img src={image.urls.regular} alt={image.description}/>
+       return <img key={image.id} src={image.urls.regular} alt={image.description}/>
      
 
     })
