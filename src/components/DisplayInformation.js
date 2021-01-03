@@ -2,12 +2,20 @@ import React from "react"
 
 
 
-const DisplayInformation = ()=>{
+const DisplayInformation = (props)=>{
+   
+    const imgImage = props.images.map((image)=> {
 
+       return <img src={image.urls.regular} alt={image.description}/>
+     
 
- return (<div>Display Information!</div>)
+    })
 
-
+ return (
+    
+    <div>{imgImage}</div>
+    
+    )
 
 }
 

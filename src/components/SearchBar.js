@@ -1,5 +1,5 @@
 import React from "react"
-import DisplayInformation from "./DisplayInformation"
+
 
 
 
@@ -28,7 +28,7 @@ render(){
         <input type="Submit"/>
         
        </form>
-       <DisplayInformation/>
+       
  </div>
  )
 
