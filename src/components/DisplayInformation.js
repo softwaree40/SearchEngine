@@ -13,7 +13,7 @@ const DisplayInformation = (props)=>{
 
  return (
     
-    <div>{imgImage}</div>
+    <div className="container-content">{imgImage}</div>
     
     )
 
